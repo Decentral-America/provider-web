@@ -1,5 +1,5 @@
 import { pipe } from 'ramda';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 
 export const getUserId = (networkByte: number, publicKey: string): string => {
     return pipe(

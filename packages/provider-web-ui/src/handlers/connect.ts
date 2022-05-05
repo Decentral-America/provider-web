@@ -1,4 +1,4 @@
-import { ConnectOptions } from '@waves/signer';
+import { ConnectOptions } from '@decentralchain/signer';
 import { IState } from '../interface';
 import { analytics } from '../utils/analytics';
 
@@ -14,7 +14,7 @@ export function getConnectHandler(
                 state.networkByte === 87
                     ? 'e3b3df0d53b4cae5b75350d898132934'
                     : 'ca96b9de2a3dd00b62ec70f7ef6ffb3e',
-            libraryUrl: 'https://waves.exchange/amplitude.js',
+            libraryUrl: 'https://decentral.exchange/amplitude.js',
             initializeMethod: 'amplitudeInit',
             sendMethod: 'amplitudePushEvent',
             type: 'logic',
@@ -23,7 +23,7 @@ export function getConnectHandler(
         analytics.addApi({
             apiToken:
                 state.networkByte === 87 ? 'UA-154392329-1' : 'UA-154392329-2',
-            libraryUrl: 'https://waves.exchange/googleAnalytics.js',
+            libraryUrl: 'https://decentral.exchange/googleAnalytics.js',
             initializeMethod: 'gaInit',
             sendMethod: 'gaPushEvent',
             type: 'ui',

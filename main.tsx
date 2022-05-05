@@ -1,27 +1,27 @@
 import React, { useEffect, useMemo } from 'react';
 import { render } from 'react-dom';
-import { Signer } from '@waves/signer';
+import { Signer } from '@decentralchain/signer';
 import { ProviderWeb } from './packages/provider-web/src';
-import * as wt from '@waves/waves-transactions';
+import * as wt from '@decentralchain/waves-transactions';
 
 const url = location.href.includes('provider=exchange')
-    ? 'https://waves.exchange/signer'
+    ? 'https://decentral.exchange/signer'
     : location.origin + '/packages/provider-web-ui/index.html';
 
 const node = location.href.includes('mainnet')
-    ? 'https://nodes.wavesplatform.com'
-    : 'https://nodes-testnet.wavesnodes.com';
+    ? 'https://mainnet-node.decentralchain.io'
+    : 'https://testnet-node.decentralchain.io';
 
 
 const testSignMessage = async (signer: Signer, setValue) => {
-    const chain_code = location.href.includes('mainnet') ? "W" : "T";
-    const client_id = "waves.exchange";
+    const chain_code = location.href.includes('mainnet') ? "?" : "!";
+    const client_id = "decentral.exchange";
     const seconds = Math.round((Date.now() + 1000 * 60 * 60 * 24 * 7) / 1000);
     const message = `${chain_code}:${client_id}:${seconds}`;
 
     const { publicKey } = await signer.login();
     const signature = await signer.signMessage(message);
-    const url = `https://api${chain_code === 'T' ? '-testnet' : ''}.waves.exchange/v1/oauth2/token`;
+    const url = `https://api${chain_code === '!' ? '-testnet' : ''}.decentral.exchange/v1/oauth2/token`;
     const data = await fetch(url, {
         method: 'POST',
         headers: {
@@ -145,7 +145,7 @@ function TestApp(): React.ReactElement {
             </div>
 
             <div>
-                <h2>Transfer 0.1 Tether USD Waves to Merry</h2>
+                <h2>Transfer 0.1 Tether USD DCC to Merry</h2>
                 <div>
                     <button
                         onClick={() => {
@@ -171,7 +171,7 @@ function TestApp(): React.ReactElement {
                                     amount: 10000000,
                                     recipient: 'merry',
                                     feeAssetId:
-                                        'WAVES',
+                                        'DCC',
                                     attachment: null,
                                 })
                                 .broadcast();
@@ -224,7 +224,7 @@ function TestApp(): React.ReactElement {
                         signer
                             .invoke({
                                 dApp: 'alias:T:merry',
-                                payment: [{ assetId: 'WAVES', amount: 1 }],
+                                payment: [{ assetId: 'DCC', amount: 1 }],
                                 call: {
                                     function: 'test',
                                     args: [

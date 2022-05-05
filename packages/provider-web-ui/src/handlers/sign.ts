@@ -1,4 +1,4 @@
-import { SignedTx, SignerTx } from '@waves/signer';
+import { SignedTx, SignerTx } from '@decentralchain/signer';
 import { IUser } from '../interface';
 import { IQueue } from '../utils/Queue';
 import { IState } from '../interface';

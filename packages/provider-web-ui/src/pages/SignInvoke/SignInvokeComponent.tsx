@@ -76,7 +76,7 @@ export const SignInvoke: FC<IProps> = ({
         <Confirmation
             address={userAddress}
             name={userName}
-            balance={`${getPrintableNumber(userBalance, WAVES.decimals)} Waves`}
+            balance={`${getPrintableNumber(userBalance, WAVES.decimals)} DCC`}
             onReject={onCancel}
             onConfirm={onConfirm}
         >
@@ -172,7 +172,7 @@ export const SignInvoke: FC<IProps> = ({
                                     >
                                         {payment.map((pay, i) => (
                                             <InvokePayment
-                                                key={pay.assetId || 'WAVES'}
+                                                key={pay.assetId || 'DCC'}
                                                 {...pay}
                                                 isLast={
                                                     i === payment.length - 1

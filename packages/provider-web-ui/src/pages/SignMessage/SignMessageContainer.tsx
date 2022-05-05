@@ -43,7 +43,7 @@ export const SignMessageContainer: FC<ISignMessageProps> = ({
         <SignMessageComponent
             userAddress={user.address}
             userName={userName}
-            userBalance={`${userBalance} Waves`}
+            userBalance={`${userBalance} DCC`}
             data={data}
             onConfirm={handleConfirm}
             onReject={handleReject}

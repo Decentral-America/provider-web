@@ -1,13 +1,13 @@
-import { fetchByAlias } from '@waves/node-api-js/es/api-node/alias';
-import { fetchDetails } from '@waves/node-api-js/es/api-node/assets';
+import { fetchByAlias } from '@decentralchain/node-api-js/es/api-node/alias';
+import { fetchDetails } from '@decentralchain/node-api-js/es/api-node/assets';
 import {
     fetchInfo,
     TFeeInfo,
-} from '@waves/node-api-js/es/api-node/transactions';
-import { NAME_MAP } from '@waves/node-api-js/es/constants';
-import availableSponsoredBalances from '@waves/node-api-js/es/tools/adresses/availableSponsoredBalances';
-import getAssetIdListByTx from '@waves/node-api-js/es/tools/adresses/getAssetIdListByTx';
-import { SignerTx } from '@waves/signer';
+} from '@decentralchain/node-api-js/es/api-node/transactions';
+import { NAME_MAP } from '@decentralchain/node-api-js/es/constants';
+import availableSponsoredBalances from '@decentralchain/node-api-js/es/tools/adresses/availableSponsoredBalances';
+import getAssetIdListByTx from '@decentralchain/node-api-js/es/tools/adresses/getAssetIdListByTx';
+import { SignerTx } from '@decentralchain/signer';
 import { Long, Transaction, TransactionType } from '@waves/ts-types';
 import { concat, flatten, indexBy, map, pipe, prop, uniq } from 'ramda';
 import { InfoMap, ITransactionInfo, IUser } from '../interface';

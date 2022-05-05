@@ -20,9 +20,9 @@ export const SignDataContainer: FC<ISignTxProps<DataTransaction>> = ({
         <SignDataComponent
             userAddress={user.address}
             userName={userName}
-            userBalance={`${userBalance} WAVES`}
+            userBalance={`${userBalance} DCC`}
             tx={tx}
-            fee={`${fee} WAVES`}
+            fee={`${fee} DCC`}
             onConfirm={onConfirm}
             onReject={onCancel}
         />

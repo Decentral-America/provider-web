@@ -1,4 +1,4 @@
-import { customData, libs, TDataEntry } from '@waves/waves-transactions';
+import { customData, libs, TDataEntry } from '@decentralchain/waves-transactions';
 import React from 'react';
 import { IUserWithBalances } from '../interface';
 import { IState } from '../interface';

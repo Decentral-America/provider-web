@@ -22,14 +22,14 @@ export const SignReissueContainer: FC<ISignTxProps<ReissueTransaction>> = ({
         <SignReissueComponent
             userAddress={user.address}
             userName={userName}
-            userBalance={`${userBalance} WAVES`}
+            userBalance={`${userBalance} DCC`}
             tx={tx}
             reissueAmount={`${getPrintableNumber(
                 tx.quantity,
                 reissueAsset.decimals
             )} ${reissueAsset.name}`}
             reissueAsset={reissueAsset}
-            fee={`${fee} WAVES`}
+            fee={`${fee} DCC`}
             onConfirm={onConfirm}
             onReject={onCancel}
         />

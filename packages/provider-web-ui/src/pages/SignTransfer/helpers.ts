@@ -1,7 +1,7 @@
 import BigNumber from '@waves/bignumber';
-import { TRANSACTION_NAME_MAP } from '@waves/node-api-js/es/interface';
+import { TRANSACTION_NAME_MAP } from '@decentralchain/node-api-js/es/interface';
 import { Long, Transaction } from '@waves/ts-types';
-import { IMassTransferItem, libs } from '@waves/waves-transactions';
+import { IMassTransferItem, libs } from '@decentralchain/waves-transactions';
 import { DetailsWithLogo, IMeta } from '../../interface';
 import { NAME_MAP, WAVES } from '../../constants';
 import { isAlias } from '../../utils/isAlias';
@@ -31,7 +31,7 @@ type GetAssetName = (
 ) => string;
 
 export const getAssetName: GetAssetName = (assetId, assets) => {
-    return assetId === null || assetId === 'WAVES' || assetId === undefined
+    return assetId === null || assetId === 'DCC' || assetId === undefined
         ? WAVES.name
         : assets[assetId].name;
 };
@@ -44,7 +44,7 @@ type GetFeeAsset = (
 
 export const getFeeAsset: GetFeeAsset = (txType, assets, txFeeAssetId) => {
     if (
-        txFeeAssetId === 'WAVES' ||
+        txFeeAssetId === 'DCC' ||
         txFeeAssetId === null ||
         typeof txFeeAssetId === 'undefined'
     ) {

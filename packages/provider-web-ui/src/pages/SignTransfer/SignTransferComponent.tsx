@@ -71,7 +71,7 @@ export const SignTransfer: FC<Props> = ({
     <Confirmation
         address={userAddress}
         name={userName}
-        balance={`${getPrintableNumber(userBalance, WAVES.decimals)} Waves`}
+        balance={`${getPrintableNumber(userBalance, WAVES.decimals)} DCC`}
         onReject={onReject}
         onConfirm={onConfirm}
     >

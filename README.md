@@ -7,4 +7,4 @@ Use `npm run dev` for development. (port is 3000 by default).
 
 See packages/*/package.json `script` section for build, test, lint, etc.
 
-How to use https://github.com/waves-exchange/provider-web/blob/master/packages/provider-web/README.md
+How to use https://github.com/Decentral-America/provider-web/blob/master/packages/provider-web/README.md

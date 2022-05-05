@@ -1,4 +1,4 @@
-import { TAssetDetails } from '@waves/node-api-js/es/api-node/assets';
+import { TAssetDetails } from '@decentralchain/node-api-js/es/api-node/assets';
 import { WAVES } from '../constants';
 import { getPrintableNumber } from './math';
 import { Long } from '@waves/ts-types';

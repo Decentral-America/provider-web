@@ -2,7 +2,7 @@
 
 exports[`getMassTransferViewData returns correct value 1`] = `
 Object {
-  "fee": "1 Waves",
+  "fee": "1 DCC",
   "totalTransferAmount": "0.03 asset1_name",
   "transferList": Array [
     Object {
@@ -36,7 +36,7 @@ Array [
 
 exports[`getTransferViewData returns correct value 1`] = `
 Object {
-  "fee": "1 Waves",
+  "fee": "1 DCC",
   "totalTransferAmount": "1000000 asset1_name",
   "transferList": Array [
     Object {

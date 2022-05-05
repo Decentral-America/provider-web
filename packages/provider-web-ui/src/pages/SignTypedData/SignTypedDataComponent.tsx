@@ -9,7 +9,7 @@ import {
     TabsList,
     Text,
 } from '@waves.exchange/react-uikit';
-import { TypedData } from '@waves/signer';
+import { TypedData } from '@decentralchain/signer';
 import React, { FC, MouseEventHandler } from 'react';
 import { Confirmation } from '../../components/Confirmation';
 import { DataEntry } from '../../components/DataEntry/DataEntry';

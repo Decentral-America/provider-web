@@ -20,10 +20,10 @@ export const SignAliasContainer: FC<ISignTxProps<AliasTransaction>> = ({
         <SignAliasComponent
             userAddress={user.address}
             userName={userName}
-            userBalance={`${userBalance} WAVES`}
+            userBalance={`${userBalance} DCC`}
             userHasScript={user.hasScript}
             tx={tx}
-            fee={`${fee} WAVES`}
+            fee={`${fee} DCC`}
             onConfirm={onConfirm}
             onReject={onCancel}
         />

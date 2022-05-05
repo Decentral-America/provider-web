@@ -1,5 +1,5 @@
 import { TPrivateMultiaccountData } from '../interface';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import isValidUsersDataJSON from './isValidUsersDataJSON';
 
 export const decryptMultiAccountData = (

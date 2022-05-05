@@ -1,6 +1,6 @@
 import { IUserWithBalances } from '../interface';
 import { IState } from '../interface';
-import { customData, libs } from '@waves/waves-transactions';
+import { customData, libs } from '@decentralchain/waves-transactions';
 import renderPage from '../utils/renderPage';
 import { SignMessageContainer } from '../pages/SignMessage/SignMessageContainer';
 import React from 'react';

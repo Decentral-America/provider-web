@@ -58,7 +58,7 @@ export const SignSponsorshipComponent: FC<Props> = ({
                 balance={`${getPrintableNumber(
                     userBalance,
                     WAVES.decimals
-                )} Waves`}
+                )} DCC`}
                 onReject={onReject}
                 onConfirm={onConfirm}
             >
@@ -221,19 +221,19 @@ export const SignSponsorshipComponent: FC<Props> = ({
                                             color="basic.$300"
                                             variant="body2"
                                         >
-                                            For each transaction, 0.001 WAVES
+                                            For each transaction, 0.001 DCC
                                             will be deducted from your balance
                                             and {sponsorAsset.name} will be
                                             credited to your account. If you
                                             have the script account you will be
-                                            cost 0.001 + 0.004 WAVES. The amount
+                                            cost 0.001 + 0.004 DCC. The amount
                                             of {sponsorAsset.name} to be charged
                                             to users for transactions is set by
                                             you when you enable Sponsorship
                                             (enter the amount in the form
                                             above). Sponsorship will only work
                                             if you have a balance of at least
-                                            1.005 WAVES. If your balance falls
+                                            1.005 DCC. If your balance falls
                                             below this amount, you will be
                                             unable to sponsor transactions.
                                         </Text>

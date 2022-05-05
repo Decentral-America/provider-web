@@ -1,9 +1,9 @@
 import {
     fetchBalance,
     fetchScriptInfo,
-} from '@waves/node-api-js/es/api-node/addresses';
-import { fetchByAddress } from '@waves/node-api-js/es/api-node/alias';
-import { libs } from '@waves/waves-transactions';
+} from '@decentralchain/node-api-js/es/api-node/addresses';
+import { fetchByAddress } from '@decentralchain/node-api-js/es/api-node/alias';
+import { libs } from '@decentralchain/waves-transactions';
 import { IUser } from '../interface';
 import { IPrivateSeedUserData } from '../interface';
 import { TCatchable } from '../utils/catchable';
@@ -102,7 +102,7 @@ export function addSeedUser(
         ...data.resolveData,
         [userId]: user,
     };
-    const name = 'Waves Account';
+    const name = 'DCC Account';
     const usersData = storage.get('multiAccountUsers');
 
     usersData[userId] = usersData[userId] ?? { name };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TypedData } from '@waves/signer';
+import { TypedData } from '@decentralchain/signer';
 
 export default function (props: {
     data: Array<TypedData>;

@@ -8,14 +8,14 @@ export default defineConfig({
     },
     optimizeDeps: {
         include: [
-            '@waves/node-api-js/es/api-node/addresses',
-            '@waves/node-api-js/es/api-node/alias',
-            '@waves/node-api-js/es/api-node/assets',
-            '@waves/node-api-js/es/api-node/transactions',
-            '@waves/node-api-js/es/api-node/utils',
-            '@waves/node-api-js/es/tools/adresses/availableSponsoredBalances',
-            '@waves/node-api-js/es/tools/adresses/getAssetIdListByTx',
-            '@waves/node-api-js/es/constants',
+            '@decentralchain/node-api-js/es/api-node/addresses',
+            '@decentralchain/node-api-js/es/api-node/alias',
+            '@decentralchain/node-api-js/es/api-node/assets',
+            '@decentralchain/node-api-js/es/api-node/transactions',
+            '@decentralchain/node-api-js/es/api-node/utils',
+            '@decentralchain/node-api-js/es/tools/adresses/availableSponsoredBalances',
+            '@decentralchain/node-api-js/es/tools/adresses/getAssetIdListByTx',
+            '@decentralchain/node-api-js/es/constants',
         ],
         exclude: [
             'node-fetch'

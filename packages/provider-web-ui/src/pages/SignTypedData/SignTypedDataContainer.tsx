@@ -1,7 +1,7 @@
 import React, { FC, useCallback } from 'react';
 import { IUserWithBalances } from '../../interface';
 import { useTxUser } from '../../hooks/useTxUser';
-import { TypedData } from '@waves/signer';
+import { TypedData } from '@decentralchain/signer';
 import { SignTypedDataComponent } from './SignTypedDataComponent';
 import { analytics } from '../../utils/analytics';
 

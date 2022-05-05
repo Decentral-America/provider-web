@@ -73,7 +73,7 @@ export const CreateAccountComponent: FC<CreateAccountComponentProps> = ({ onClos
                         </PlateNote>
                         <Box pt="24px" textAlign="center" fontWeight={300}>
                             <Text variant="footnote1" color="basic.$500">
-                                Waves.Exchange
+                                decentral.exchange
                             </Text>
                             <Text variant="footnote1" color="basic.$700">
                                 {' '}
@@ -84,8 +84,8 @@ export const CreateAccountComponent: FC<CreateAccountComponentProps> = ({ onClos
                 ) : (
                     <>
                         <Box color="#c5d0de" fontSize="15px" lineHeight="20px" textAlign="center" mb="24px">
-                            You have not imported any seed accounts. Please go to the Waves.exchange
-                            <ExternalLink href="https://waves.exchange/sign-up/software"> Sign Up </ExternalLink>
+                            You have not imported any seed accounts. Please go to the decentral.exchange
+                            <ExternalLink href="https://decentral.exchange/sign-up/software"> Sign Up </ExternalLink>
                             page and create your account.
                         </Box>
                         <PlateNote type="warning" mb="24px">
@@ -94,7 +94,7 @@ export const CreateAccountComponent: FC<CreateAccountComponentProps> = ({ onClos
                                 This could happen if you cleared your browser cache or started using a new browser or new device. You need to create a password again on the registration page and import your existing account with your seed, private key or Keystore File.
                             </Box>
                         </PlateNote>
-                        <ExternalLink href="https://waves.exchange/sign-up/software">
+                        <ExternalLink href="https://decentral.exchange/sign-up/software">
                             <Button
                                 variant="primary"
                                 variantSize="medium"

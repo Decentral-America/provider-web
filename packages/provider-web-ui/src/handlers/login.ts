@@ -1,6 +1,6 @@
-import { UserData } from '@waves/signer';
+import { UserData } from '@decentralchain/signer';
 import { Bus, WindowAdapter, WindowProtocol } from '@waves/waves-browser-bus';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import { pipe } from 'ramda';
 import { TBus } from '../interface';
 import { IQueue } from '../utils/Queue';

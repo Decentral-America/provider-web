@@ -4,7 +4,7 @@ import {
     SignerTx,
     TypedData,
     UserData,
-} from '@waves/signer';
+} from '@decentralchain/signer';
 import { Bus } from '@waves/waves-browser-bus';
 
 // eslint-disable-next-line @typescript-eslint/consistent-type-definitions

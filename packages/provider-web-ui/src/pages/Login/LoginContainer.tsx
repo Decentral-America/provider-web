@@ -8,7 +8,7 @@ import React, {
 import { IUser } from '../../interface';
 import { LoginComponent } from './LoginComponent';
 import { getUsers, addSeedUser, StorageUser } from '../../services/userService';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import { analytics } from '../../utils/analytics';
 import { SelectAccountComponent } from './SelectAccountComponent';
 

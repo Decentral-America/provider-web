@@ -2,8 +2,8 @@ import { curry } from 'ramda';
 import {
     fetchCalculateFee,
     TFeeInfo,
-} from '@waves/node-api-js/es/api-node/transactions';
-import { SignerTx } from '@waves/signer';
+} from '@decentralchain/node-api-js/es/api-node/transactions';
+import { SignerTx } from '@decentralchain/signer';
 
 export const loadFeeByTransaction = curry(
     (base: string, tx: SignerTx): Promise<SignerTx> =>

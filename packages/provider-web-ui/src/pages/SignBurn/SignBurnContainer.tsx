@@ -29,7 +29,7 @@ export const SignBurnContainer: FC<ISignTxProps<BurnTransaction>> = ({
             userBalance={`${getPrintableNumber(
                 user.balance,
                 WAVES.decimals
-            )} Waves`}
+            )} DCC`}
             tx={tx}
             fee={`${fee} ${feeAsset.ticker}`}
             burnAmount={`-${burnAmount} ${burnAsset.name}`}

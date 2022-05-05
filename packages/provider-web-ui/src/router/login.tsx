@@ -1,5 +1,5 @@
-import { UserData } from '@waves/signer';
-import { libs } from '@waves/waves-transactions';
+import { UserData } from '@decentralchain/signer';
+import { libs } from '@decentralchain/waves-transactions';
 import React from 'react';
 import { IUser } from '../interface';
 import { IState } from '../interface';

@@ -14,14 +14,14 @@ type RecursivePartial<T> = {
 type PartialMeta = RecursivePartial<IMeta<Transaction>>;
 
 const wavesFeeAssetId = null;
-const notWavesFeeAssetId = 'not_waves_fee_asset_id';
-const notWavesAssetName = 'not a waves asset';
+const notWavesFeeAssetId = 'not_DCC_fee_asset_id';
+const notWavesAssetName = 'not a DCC asset';
 
 describe('getFeeOptions', () => {
     const getFeeMock = jest.spyOn(helpers, 'formatFee');
 
     describe('fee provided', () => {
-        it('should return waves fee option only', () => {
+        it('should return DCC fee option only', () => {
             const txFee = '1000';
 
             getFeeMock.mockReturnValue(txFee);
@@ -66,7 +66,7 @@ describe('getFeeOptions', () => {
             getFeeMock.mockReset();
         });
 
-        describe('feeAssetId !== Waves, fee === undefinded', () => {
+        describe('feeAssetId !== DCC, fee === undefinded', () => {
             it('should return asset fee option', () => {
                 const paramsFeeAssetId = notWavesFeeAssetId;
 
@@ -91,8 +91,8 @@ describe('getFeeOptions', () => {
             });
         });
 
-        describe('feeAssetId === Waves', () => {
-            it('should return waves fee option, fee === undefinded', () => {
+        describe('feeAssetId === DCC', () => {
+            it('should return DCC fee option, fee === undefinded', () => {
                 const paramsFeeAssetId = wavesFeeAssetId;
 
                 const actual = helpers.getFeeOptions({
@@ -163,8 +163,8 @@ describe('getFeeOptions', () => {
                 },
             };
 
-            describe('not enough waves balance', () => {
-                it("doesn't include waves fee option", () => {
+            describe('not enough DCC balance', () => {
+                it("doesn't include DCC fee option", () => {
                     checkIsEnoughBalanceMock.mockReturnValueOnce(false);
 
                     const actual = helpers.getFeeOptions({
@@ -187,8 +187,8 @@ describe('getFeeOptions', () => {
                     expect(actual).toEqual(expected);
                 });
             });
-            describe('enough waves balance', () => {
-                it('includes waves fee option', () => {
+            describe('enough DCC balance', () => {
+                it('includes DCC fee option', () => {
                     checkIsEnoughBalanceMock.mockReturnValueOnce(true);
 
                     const actual = helpers.getFeeOptions({
@@ -220,8 +220,8 @@ describe('getFeeOptions', () => {
                 feeList: [],
             };
 
-            describe('enough waves balance', () => {
-                it('should return only waves fee option', () => {
+            describe('enough DCC balance', () => {
+                it('should return only DCC fee option', () => {
                     checkIsEnoughBalanceMock.mockReturnValueOnce(true);
 
                     const actual = helpers.getFeeOptions({
@@ -244,8 +244,8 @@ describe('getFeeOptions', () => {
                     expect(actual).toEqual(expected);
                 });
             });
-            describe('not enough waves balance', () => {
-                it('should return only waves fee option', () => {
+            describe('not enough DCC balance', () => {
+                it('should return only DCC fee option', () => {
                     checkIsEnoughBalanceMock.mockReturnValueOnce(false);
 
                     const actual = helpers.getFeeOptions({

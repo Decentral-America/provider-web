@@ -331,18 +331,18 @@ export const SignIssueComponent: FC<Props> = ({
                                                     transaction by a Smart
                                                     Asset's script increases the
                                                     transaction fee by 0.004
-                                                    WAVES. For example, if a
+                                                    DCC. For example, if a
                                                     regular tx is made for a
                                                     Smart Asset, the cost is
-                                                    0.001 + 0.004 = 0.005 WAVES.
+                                                    0.001 + 0.004 = 0.005 DCC.
                                                     If an exchange transaction
                                                     is made, the cost is 0.003 +
-                                                    0.004 = 0.007 WAVES.
+                                                    0.004 = 0.007 DCC.
                                                     <ExternalLink
                                                         mt="$5"
                                                         variant="body2"
                                                         display="block"
-                                                        href="https://docs.wavesplatform.com/en/building-apps/smart-contracts/smart-assets"
+                                                        href="https://docs.decentralchain.io/en/building-apps/smart-contracts/smart-assets"
                                                         target="_blank"
                                                     >
                                                         Learn more
@@ -416,7 +416,7 @@ export const SignIssueComponent: FC<Props> = ({
                                     >
                                         IV) You will not set a script on a smart
                                         asset that limits exchange transactions
-                                        on Waves.Exchange by asset quantity;
+                                        on decentral.exchange by asset quantity;
                                     </Text>
                                     <Text
                                         display="block"

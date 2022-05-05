@@ -7,7 +7,7 @@ import {
     SignerTx,
     TypedData,
     UserData,
-} from '@waves/signer';
+} from '@decentralchain/signer';
 import { config } from '@waves/waves-browser-bus';
 import { EventEmitter } from 'typed-ts-events';
 import { ITransport } from './interface';
@@ -22,7 +22,7 @@ export class ProviderWeb implements Provider {
 
     constructor(clientUrl?: string, logs?: boolean) {
         this._clientUrl =
-            (clientUrl || 'https://waves.exchange/signer/') +
+            (clientUrl || 'https://decentral.exchange/signer/') +
             (import.meta.env.PROD ? `?${ProviderWeb._getCacheClean()}` : '');
 
         this._transport = new TransportIframe(this._clientUrl, 3);

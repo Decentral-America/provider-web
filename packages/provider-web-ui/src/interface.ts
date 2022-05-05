@@ -1,6 +1,6 @@
-import { TAssetDetails } from '@waves/node-api-js/es/api-node/assets';
-import { TFeeInfo } from '@waves/node-api-js/es/api-node/transactions';
-import { NAME_MAP } from '@waves/node-api-js/es/constants';
+import { TAssetDetails } from '@decentralchain/node-api-js/es/api-node/assets';
+import { TFeeInfo } from '@decentralchain/node-api-js/es/api-node/transactions';
+import { NAME_MAP } from '@decentralchain/node-api-js/es/constants';
 import {
     ConnectOptions,
     SignedTx,
@@ -8,7 +8,7 @@ import {
     SignerTx,
     TypedData,
     UserData,
-} from '@waves/signer';
+} from '@decentralchain/signer';
 import {
     Long,
     Transaction,

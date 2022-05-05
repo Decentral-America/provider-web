@@ -1,6 +1,6 @@
-import { SignerTx } from '@waves/signer';
+import { SignerTx } from '@decentralchain/signer';
 import { Transaction } from '@waves/ts-types';
-import { libs, signTx } from '@waves/waves-transactions';
+import { libs, signTx } from '@decentralchain/waves-transactions';
 import { ITransactionInfo, IUser } from '../interface';
 import { IState } from '../interface';
 import batchPage from '../pages/batch';

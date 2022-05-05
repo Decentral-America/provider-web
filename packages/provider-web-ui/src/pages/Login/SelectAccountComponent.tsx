@@ -12,7 +12,7 @@ import {
 import React, { useEffect, FC, MouseEventHandler } from 'react';
 import { IUser } from '../../interface';
 import { getUserName, StorageUser } from '../../services/userService';
-import { libs } from '@waves/waves-transactions';
+import { libs } from '@decentralchain/waves-transactions';
 import { analytics } from '../../utils/analytics';
 
 const RadioUser: FC<RadioButtonProps<IUser>> = ({

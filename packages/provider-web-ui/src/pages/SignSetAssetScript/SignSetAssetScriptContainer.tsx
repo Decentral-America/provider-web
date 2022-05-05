@@ -21,9 +21,9 @@ export const SignSetAssetScriptContainer: FC<
             userBalance={`${getPrintableNumber(
                 user.balance,
                 WAVES.decimals
-            )} Waves`}
+            )} DCC`}
             tx={tx}
-            fee={`${fee} WAVES`}
+            fee={`${fee} DCC`}
             assetId={asset.assetId}
             assetName={asset.name}
             assetScript={tx.script}

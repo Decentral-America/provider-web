@@ -20,7 +20,7 @@ const isFeeAssetId = (
     feeAssetId: string | null | undefined
 ): feeAssetId is string | null => typeof feeAssetId !== 'undefined';
 
-const isWaves = (feeId: string | null | undefined) => feeId === 'WAVES';
+const isWaves = (feeId: string | null | undefined) => feeId === 'DCC';
 
 const isNonDefaultFeeAssetId = (
     feeAssetId: string | null | undefined

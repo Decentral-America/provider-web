@@ -32,40 +32,40 @@ const massTransferItem2: MassTransferItem<Long> = {
 };
 
 describe('getAmountAsset', () => {
-    it('returns WAVES if assetId === null', () => {
+    it('returns DCC if assetId === null', () => {
         expect(helpers.getAmountAsset(null, assets)).toEqual(WAVES);
     });
-    it('returns WAVES if assetId === undefined', () => {
+    it('returns DCC if assetId === undefined', () => {
         expect(helpers.getAmountAsset(undefined, assets)).toEqual(WAVES);
     });
-    it('returns correct asset if non waves asset id passed', () => {
+    it('returns correct asset if non DCC asset id passed', () => {
         expect(helpers.getAmountAsset(asset1Id, assets)).toEqual(asset1);
     });
 });
 
 describe('getAssetName', () => {
-    it('returns WAVES asset name if assetId === null', () => {
+    it('returns DCC asset name if assetId === null', () => {
         expect(helpers.getAssetName(null, assets)).toBe(WAVES.name);
     });
-    it('returns WAVES asset name if assetId === undefined', () => {
+    it('returns DCC asset name if assetId === undefined', () => {
         expect(helpers.getAssetName(undefined, assets)).toBe(WAVES.name);
     });
-    it('returns correct asset name if non waves asset id passed', () => {
+    it('returns correct asset name if non DCC asset id passed', () => {
         expect(helpers.getAssetName(asset1Id, assets)).toBe(asset1.name);
     });
 });
 
 describe('getFeeAsset', () => {
-    it('returns WAVES if mass transfer', () => {
+    it('returns DCC if mass transfer', () => {
         expect(helpers.getFeeAsset(11, assets)).toEqual(WAVES);
     });
-    it('returns WAVES if transaciton fee asset id is undefined', () => {
+    it('returns DCC if transaciton fee asset id is undefined', () => {
         expect(helpers.getFeeAsset(4, assets)).toEqual(WAVES);
     });
-    it('returns WAVES if transaciton fee asset id === Waves id', () => {
+    it('returns DCC if transaciton fee asset id === DCC id', () => {
         expect(helpers.getFeeAsset(4, assets, null)).toEqual(WAVES);
     });
-    it('returns correct asset if non waves fee asset id passed', () => {
+    it('returns correct asset if non DCC fee asset id passed', () => {
         expect(helpers.getFeeAsset(4, assets, asset1Id)).toEqual(asset1);
     });
 });
@@ -190,20 +190,20 @@ describe('getTransferList', () => {
 });
 
 describe('getFeeAssetName', () => {
-    describe('returns WAVES name if', () => {
+    describe('returns DCC name if', () => {
         it('mass transfer', () => {
             expect(helpers.getFeeAssetName(11, assets)).toBe(WAVES.name);
         });
         it('transaciton fee asset id is undefined', () => {
             expect(helpers.getFeeAssetName(4, assets)).toEqual(WAVES.name);
         });
-        it('fee asset id === Waves id', () => {
+        it('fee asset id === DCC id', () => {
             expect(helpers.getFeeAssetName(4, assets, null)).toEqual(
                 WAVES.name
             );
         });
     });
-    it('returns correct asset if non waves fee asset id passed', () => {
+    it('returns correct asset if non DCC fee asset id passed', () => {
         expect(helpers.getFeeAssetName(4, assets, asset1Id)).toEqual(
             asset1.name
         );

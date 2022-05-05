@@ -4,9 +4,9 @@ import { TransactionType } from '@waves/ts-types';
 export const MAX_ALIAS_LENGTH = 30;
 
 export const WAVES = {
-    ticker: 'WAVES',
-    assetId: 'WAVES',
-    name: 'Waves',
+    ticker: 'DCC',
+    assetId: 'DCC',
+    name: 'Decentralcoin',
     decimals: 8,
     description: '',
     issueHeight: 0,
@@ -15,7 +15,7 @@ export const WAVES = {
     scripted: false,
     minSponsoredFee: null,
     quantity: BigNumber.toBigNumber(100000000).mul(Math.pow(10, 8)).toFixed(),
-    issuer: 'WAVES',
+    issuer: 'DCC',
     minSponsoredAssetFee: null,
     logo: '',
 };

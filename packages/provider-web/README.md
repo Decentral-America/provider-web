@@ -12,7 +12,7 @@
 <a id="overview"></a>
 ## Overview
 ​
-ProviderWeb developed by Waves.Exchange implements a Signature Provider for [Signer](https://github.com/wavesplatform/signer) protocol library. Signer enables easy deploy dApps based on Waves blockchain. Users' encrypted private keys and SEED phrase are stored in waves.exchange domain of the local browser storage. Waves.Exchange and other apps do not have access to the local data as they are stored encrypted.
+ProviderWeb developed by decentral.exchange implements a Signature Provider for [Signer](https://github.com/Decentral-America/signer) protocol library. Signer enables easy deploy dApps based on Decentralchain. Users' encrypted private keys and SEED phrase are stored in decentral.exchange domain of the local browser storage. decentral.exchange and other apps do not have access to the local data as they are stored encrypted.
 
 ​
 > For now, signing is implemented for all types of transactions except exchange transactions.
@@ -25,12 +25,12 @@ ProviderWeb developed by Waves.Exchange implements a Signature Provider for [Sig
 To install Signer and ProviderWeb libraries use
 ​
 ```bash
-npm i @waves/signer @waves.exchange/provider-web
+npm i @decentralchain/signer @waves.exchange/provider-web
 ```
 ​
 For Windows, use the following format:
 ```bash
-npm i @waves/signer '@waves.exchange/provider-web'
+npm i @decentralchain/signer '@waves.exchange/provider-web'
 ```
 ​
 ​
@@ -41,20 +41,20 @@ Add library initialization to your app.
 * For Testnet:
 ​
    ```js
-   import Signer from '@waves/signer';
+   import Signer from '@decentralchain/signer';
    import { ProviderWeb } from '@waves.exchange/provider-web';
 
    const signer = new Signer({
      // Specify URL of the node on Testnet
-     NODE_URL: 'https://nodes-testnet.wavesnodes.com'
+     NODE_URL: 'https://testnet-node.decentralchain.io'
    });
-   signer.setProvider(new ProviderWeb('https://testnet.waves.exchange/signer'));
+   signer.setProvider(new ProviderWeb('https://testnet.decentral.exchange/signer'));
    ```
 ​
 * For Mainnet:
 ​
    ```js
-   import Signer from '@waves/signer';
+   import Signer from '@decentralchain/signer';
    import { ProviderWeb } from '@waves.exchange/provider-web';
 
    const signer = new Signer();
@@ -63,17 +63,17 @@ Add library initialization to your app.
 ​
 ### 3. Basic example
 ​
-Now your application is ready to work with Waves Platform. Let's test it by implementing basic functionality. For example, we could try to authenticate user, get his/her balances and transfer funds.
+Now your application is ready to work with DecentralChain. Let's test it by implementing basic functionality. For example, we could try to authenticate user, get his/her balances and transfer funds.
 ​
 ```js
 const user = await signer.login();
 const balances = await signer.getBalance();
 const [broadcastedTransfer] = await signer
-  .transfer({amount: 100000000, recipient: 'alias:T:merry'}) // Transfer 1 WAVES to alias merry
+  .transfer({amount: 100000000, recipient: 'alias:T:merry'}) // Transfer 1 DCC to alias merry
   .broadcast(); // Promise will resolved after user sign and node response
 ​
 const [signedTransfer] = await signer
-  .transfer({amount: 100000000, recipient: 'alias:T:merry'}) // Transfer 1 WAVES to alias merry
+  .transfer({amount: 100000000, recipient: 'alias:T:merry'}) // Transfer 1 DCC to alias merry
   .sign(); // Promise will resolved after user sign
 ```
 ​
@@ -90,7 +90,7 @@ You can use optional parameters for debugging.
 ​
 | Parameter | Default value | Description |
 | :--- | :--- | :--- |
-| clientOrigin | https://waves.exchange/signer | URL of the ProviderWeb instance. For debugging, you can launch the ProviderWeb instance on your server. |
+| clientOrigin | https://decentral.exchange/signer | URL of the ProviderWeb instance. For debugging, you can launch the ProviderWeb instance on your server. |
 | logs | false | Logging level. If `true`, all events are logged |
 ​
 **Usage:**
@@ -102,11 +102,7 @@ var provider = new ProviderWeb(
 );
 ```
 ​
-<a id="More Examples"></a>
-## More examples
-​
-Getting Started with Waves Signer and ProviderWeb: <https://medium.com/@izhur27/893017c9b7ae?>.
-Collapse
+
 
 
 

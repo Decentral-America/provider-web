@@ -188,15 +188,15 @@ export const SignSetAccountScriptComponent: FC<IProps> = ({
                                         >
                                             If the transaction is sent from a
                                             smart account, the transaction fee
-                                            is increased by 0.004 WAVES. So if
-                                            the transaction fee is 0.001 WAVES,
+                                            is increased by 0.004 DCC. So if
+                                            the transaction fee is 0.001 DCC,
                                             the owner of the smart account will
-                                            pay 0.001 + 0.004 = 0.005 WAVES
+                                            pay 0.001 + 0.004 = 0.005 DCC
                                             <ExternalLink
                                                 mt="$5"
                                                 variant="body2"
                                                 display="block"
-                                                href="https://docs.wavesplatform.com/en/building-apps/smart-contracts/what-is-smart-account#expression"
+                                                href="https://docs.decentralchain.io/en/building-apps/smart-contracts/what-is-smart-account#expression"
                                             >
                                                 Learn more
                                             </ExternalLink>

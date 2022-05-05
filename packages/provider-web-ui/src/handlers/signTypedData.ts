@@ -1,4 +1,4 @@
-import { TDataEntry } from '@waves/waves-transactions';
+import { TDataEntry } from '@decentralchain/waves-transactions';
 import { IUser } from '../interface';
 import { IQueue } from '../utils/Queue';
 import { IState } from '../interface';

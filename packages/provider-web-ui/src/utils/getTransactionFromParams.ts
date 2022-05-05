@@ -1,8 +1,8 @@
 import { fixRecipient } from './fixRecipient';
 import { NAME_MAP } from '../constants';
-import { makeTx, libs } from '@waves/waves-transactions';
+import { makeTx, libs } from '@decentralchain/waves-transactions';
 import { curry } from 'ramda';
-import { SignerTx } from '@waves/signer';
+import { SignerTx } from '@decentralchain/signer';
 
 const fixParams = (networkByte: number, tx: SignerTx): SignerTx => {
     const updateRecipient: <T extends { recipient: string }>(

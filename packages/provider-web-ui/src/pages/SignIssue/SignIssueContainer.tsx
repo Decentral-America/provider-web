@@ -40,7 +40,7 @@ export const SignIssueContainer: FC<ISignTxProps<IssueTransaction>> = ({
             onTermsCheck={handleTermsCheck}
             canConfirm={canConfirm}
             tx={tx}
-            fee={`${getPrintableNumber(tx.fee, WAVES.decimals)} WAVES`}
+            fee={`${getPrintableNumber(tx.fee, WAVES.decimals)} DCC`}
         />
     );
 };

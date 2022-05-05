@@ -49,8 +49,8 @@ WindowAdapter.createSimpleWindowAdapter()
 
         const state: IState = {
             user: null,
-            networkByte: 87,
-            nodeUrl: 'https://nodes.wavesplatform.com',
+            networkByte: 63,
+            nodeUrl: 'https://mainnet-node.decentralchain.io',
             matcherUrl: undefined,
         };
 

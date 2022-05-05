@@ -15,13 +15,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/waves-exchange/provider-web.git"
+    "url": "https://github.com/Decentral-America/provider-web.git"
   },
   "bugs": {
-    "url": "https://github.com/waves-exchange/provider-web/issues",
+    "url": "https://github.com/Decentral-America/provider-web/issues",
     "email": "support@waves.exchange"
   },
-  "homepage": "https://waves.exchange",
+  "homepage": "https://decentral.exchange",
   "description": "ProviderWeb for Signer",
   "scripts": {
     "test": "jest",
@@ -37,9 +37,9 @@
     "typed-ts-events": "^1.2.1"
   },
   "peerDependencies": {
-    "@waves/signer": "1.x"
+    "@decentralchain/signer": "1.x"
   },
   "devDependencies": {
-    "@waves/signer": "1.0.1"
+    "@decentralchain/signer": "1.0.1"
   }
 }
